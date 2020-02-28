@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    height: 100%;
+    max-width: 1200px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.header-left {
+    height: 100%;
+    width: 20%;
+    background-color: red;
+    float: left;
+}
+
+.header-right {
+    height: 100%;
+    width: 60%;
+    background-color: blue;
+    float: right;
+}
