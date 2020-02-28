@@ -36,6 +36,17 @@ a {
     float: left;
 }
 
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    height: 100%;
+}
+
+#logo img {
+    height: 100%;
+}
+
 .header-right {
     height: 100%;
     width: 60%;
@@ -68,7 +79,7 @@ nav {
 }
 
 #narrow {
-    width: 100px;
+    width: 120px;
 }
 
 .dropdown-menu {
@@ -76,10 +87,17 @@ nav {
     display: none;
 }
 
-.arrow::after {
+.arrow > a::after {
     font-family: "fontawesome";
     content: '\f107';
+    font-weight: 400;
+    /* transition: transform 0.3s; */
+    padding-left: 5px;
 }
+
+/* .arrow > a.ruota::after {
+    transform: rotate(180deg);
+} */
 
 .dropdown-menu-item {
     padding: 10px 0;

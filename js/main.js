@@ -8,12 +8,17 @@ $(document).ready(function () {
     // per prima cosa chiude tutti i menu a tendina che sono aperti
 
     $('.menu-item').click(function () {
-        
+
         $('.menu-item').children('.dropdown-menu').slideUp(300);
 
         if(!$(this).children('.dropdown-menu').is(':visible')) {
             $(this).children('.dropdown-menu').slideToggle(300);
         }
+
+        // tentativo rotazione arrow
+        // if ($('.menu-item').children('dropdown-menu').is(':visible')) {
+        //     $(this).children('arrow').toggleClass('rotate');
+        // }
     });
 
     $('main').click(function () {
