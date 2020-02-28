@@ -2,10 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
 }
 
 header {
     height: 80px;
+    background-color: #ececec;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .clearfix::after {
@@ -17,20 +27,65 @@ header {
 .container {
     height: 100%;
     max-width: 1200px;
-    background-color: green;
     margin: 0 auto;
 }
 
 .header-left {
     height: 100%;
     width: 20%;
-    background-color: red;
     float: left;
 }
 
 .header-right {
     height: 100%;
     width: 60%;
-    background-color: blue;
     float: right;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 200;
+}
+
+.menu-item {
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dropdown-menu {
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+#narrow {
+    width: 100px;
+}
+
+.dropdown-menu {
+    margin: 10px 0;
+    display: none;
+}
+
+.arrow::after {
+    font-family: "fontawesome";
+    content: '\f107';
+}
+
+.dropdown-menu-item {
+    padding: 10px 0;
+}
+
+main {
+    height: calc(100vh - 80px);
+    margin: 0 auto;
 }
